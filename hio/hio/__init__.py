@@ -1,10 +1,15 @@
-from .find_houdini import find_houdini, append_path
+import os
+import sys
+
+from .find_houdini import append_path, find_houdini
 
 HFS = find_houdini()
 
-if '18.0.566' in HFS:
-	append_path(HFS['18.0.566'])
-	from . import core_18_0_566 as core
+if '18.5.696' in HFS:
+	append_path(HFS['18.5.696'])
+	from .core import core_18_5_696 as core
+
+	# os.add_dll_directory("core_18_5_696.pyd")
 else:
 	raise 'No valid houdini version found: %s' % HFS.keys()
 

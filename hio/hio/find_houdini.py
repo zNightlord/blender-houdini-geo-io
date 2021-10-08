@@ -1,7 +1,7 @@
 import os
 import re
 
-houdini_search_path = [R'C:/Program Files/Side Effects Software']
+houdini_search_path = [R'D:/Side Effects Software']
 m_hversion = re.compile('Houdini (\d+\.\d+\.\d+)')
 
 def find_houdini():

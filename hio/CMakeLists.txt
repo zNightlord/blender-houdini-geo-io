@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.8)
 
 project(hio)
 
-set(HFS "C:/Program Files/Side Effects Software/Houdini 17.0.416" CACHE STRING "Houdini Path")
+set(HFS "D:/Side Effects Software/Houdini 18.5.696" CACHE STRING "Houdini Path")
 
 set(TOOLKIT_CMAKE "${HFS}/toolkit/cmake")
 list(APPEND CMAKE_PREFIX_PATH "${TOOLKIT_CMAKE}")
